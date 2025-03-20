@@ -1,4 +1,13 @@
-import api from '@/api';
+import axios from 'axios';
+
+Axios 인스턴스 생성
+const api = axios.create({
+    baseURL: '/api', // 프록시 경로와 일치
+    headers: {
+        'Content-Type': 'application/json',
+    },
+});
+
 
 export default {
   //    모든 상품 조회
