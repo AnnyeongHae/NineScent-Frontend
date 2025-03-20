@@ -1,12 +1,12 @@
-import axios from 'axios';
+import api from '@/api';
 
 // Axios 인스턴스 생성
-const api = axios.create({
-    baseURL: '/api', // 프록시 경로와 일치
-    headers: {
-        'Content-Type': 'application/json',
-    },
-});
+// const api = axios.create({
+//     baseURL: '/api', // 프록시 경로와 일치
+//     headers: {
+//         'Content-Type': 'application/json',
+//     },
+// });
 
 // 아이디 중복 검사
 export const checkUsername = async (username) => {
